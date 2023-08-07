@@ -29,10 +29,4 @@ public class MovieRequest {
 
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private String image;
-
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String createdAt;
-
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    private String updatedAt;
 }

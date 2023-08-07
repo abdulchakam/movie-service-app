@@ -14,7 +14,7 @@ public class MovieResponse {
     private Integer id;
     private String title;
     private String description;
-    private String ranting;
+    private Float ranting;
     private String imagePath;
     private String createdAt;
     private String updatedAt;

@@ -50,9 +50,9 @@ public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
         return new ResponseEntity<>(body, ex.getHttpStatus());
     }
 
-    @ExceptionHandler(DataAlreadyExist.class)
-    public ResponseEntity<Object> handleClientException(DataAlreadyExist ex) {
-        logger.error("DataAlreadyExist Exception : ", ex);
+    @ExceptionHandler(DataAlreadyExistException.class)
+    public ResponseEntity<Object> handleClientException(DataAlreadyExistException ex) {
+        logger.error("DataAlreadyExistException Exception : ", ex);
         BaseResponse body = new BaseResponse();
         body.setStatus(ex.getHttpStatus().value());
         body.setMessage(ex.getHttpStatus().getReasonPhrase());

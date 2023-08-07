@@ -4,7 +4,7 @@ import com.abdulchakam.movieservice.constant.ErrorMessage;
 import com.abdulchakam.movieservice.dto.BaseResponse;
 import com.abdulchakam.movieservice.dto.MovieRequest;
 import com.abdulchakam.movieservice.dto.MovieResponse;
-import com.abdulchakam.movieservice.exception.DataAlreadyExist;
+import com.abdulchakam.movieservice.exception.DataAlreadyExistException;
 import com.abdulchakam.movieservice.exception.DataNotFoundException;
 import com.abdulchakam.movieservice.exception.InternalServerException;
 import com.abdulchakam.movieservice.factory.MovieFactory;
@@ -174,7 +174,7 @@ public class MovieServiceImpl implements MovieService {
     private void validateMovieTitle(String title, Integer id) {
         Movie movieExist = movieRepository.findByTitle(title);
         if (!ObjectUtils.isEmpty(movieExist) && (id == null || !id.equals(movieExist.getId()))) {
-            throw new DataAlreadyExist(ErrorMessage.MOVIE_TITLE_ALREADY_EXIST_MESSAGE);
+            throw new DataAlreadyExistException(ErrorMessage.MOVIE_TITLE_ALREADY_EXIST_MESSAGE);
         }
     }
 
