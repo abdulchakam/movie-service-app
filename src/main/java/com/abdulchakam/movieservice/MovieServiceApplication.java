@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 				contact = @Contact(name = "Muhammad Abdul Chakam", email = "muhabdulchakam@gmail.com", url = "https://github.com/abdulchakam/movie-service-app")))
 public class MovieServiceApplication {
 
+//	Add comment on branch bugfix
 //	Add comment on branch feature A
 	public static void main(String[] args) {
 		SpringApplication.run(MovieServiceApplication.class, args);
