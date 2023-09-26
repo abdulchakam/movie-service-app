@@ -13,6 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MovieServiceApplication {
 
 //	Add comment on branch bugfix
+//	Add comment on branch feature A
 	public static void main(String[] args) {
 		SpringApplication.run(MovieServiceApplication.class, args);
 	}
