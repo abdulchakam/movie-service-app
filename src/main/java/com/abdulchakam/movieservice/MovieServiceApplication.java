@@ -11,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 		info = @Info(title = "Movie RESTFul API", version = "1.0", description = "OpenAPI for Movie RESTFul API",
 				contact = @Contact(name = "Muhammad Abdul Chakam", email = "muhabdulchakam@gmail.com", url = "https://github.com/abdulchakam/movie-service-app")))
 public class MovieServiceApplication {
+// Add comment on feture a
 
 //	Add comment on branch bugfix
 //	Add comment on branch feature A
